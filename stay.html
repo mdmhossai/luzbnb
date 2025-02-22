@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuzBnB - Home</title>
+    <style>
+       * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background: #f4f4f4;
+        }
+        /* Header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background: rgba(0, 33, 71, 0.9);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        .nav-links li {
+            margin: 0 15px;
+        }
+        .nav-links a {
+            color: #89CFF0;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+        .nav-links a:hover {
+            color: white;
+        }
+        /* Hero Section */
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 40vh;
+            overflow: hidden;
+            margin-top: 70px;
+        }
+        .hero img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+        .hero-content h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .hero-content h2 {
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .slideshow {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        .slideshow img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 3s ease-in-out;
+        }
+        .slideshow img.active {
+            opacity: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        .hero h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        .whatsapp-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #25D366;
+            color: white;
+            font-size: 1.2rem;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .whatsapp-btn:hover {
+            background-color: #1ebe57;
+        }
+               /* Footer Styling */
+.footer {
+    background: #222;
+    color: #fff;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Footer Sections */
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px 0;
+}
+
+.footer-section h2, .footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    font-size: 1rem;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* Quick Links */
+.footer-section.links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section.links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section.links ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section.links ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Contact Info */
+.footer-section.contact p {
+    margin: 5px 0;
+}
+
+/* Social Media */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons a img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    padding: 15px 0;
+    background: #111;
+    font-size: 0.9rem;
+}
+
+.footer-bottom a {
+    color: #ffcc00;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+    color: #fff;
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="assests/pictures/luzbnb.png" alt="LuzBnB Logo">
+            LuzBnB
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Book A Stay</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Manage My Property</a></li>
+            <li><a href="#">About LuzBnB</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="contact .html">Contact Us</a></li>
+        </ul>
+    </header>
+    <section class="hero">
+        <div class="slideshow">
+            <img src="assets/pictures/hero1.jpg" class="active" alt="Hero Image 1">
+            <img src="assets/pictures/hero2.jpg" alt="Hero Image 2">
+            <img src="assets/pictures/hero3.jpg" alt="Hero Image 3">
+        </div>
+        <div class="hero-content">
+            <h1>Looking for accommodation</h1>
+            <h2>Find your best short-term accommodation</h2>
+            <a href="https://wa.me/yourwhatsapplink" class="whatsapp-btn">Chat on WhatsApp</a>
+        </div>
+    </section>
+
+    <script>
+        let images = document.querySelectorAll('.slideshow img');
+        let index = 0;
+
+        function changeImage() {
+            images[index].classList.remove('active');
+            index = (index + 1) % images.length;
+            images[index].classList.add('active');
+        }
+
+        setInterval(changeImage, 5000);
+    </script>
+    
+ <script src="assets/js/slider.js"></script>
+<footer class="footer">
+  <div class="footer-container">
+      <!-- Branding & About -->
+      <div class="footer-section about">
+          <h2>LuzBnB</h2>
+          <p>Your premium short-term rental solution, providing luxury stays and outstanding guest experiences.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section links">
+          <h3>Quick Links</h3>
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Success Stories</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-section contact">
+          <h3>Contact Us</h3>
+          <p>Email: support@luzbnb.com</p>
+          <p>Phone: +1 (123) 456-7890</p>
+          <p>Location: 123 BnB Street, New York, USA</p>
+      </div>
+
+      <!-- Social Media -->
+      <div class="footer-section social">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+              <a href="#"><img src="2.png" alt="Facebook"></a>
+              <a href="#"><img src="1.png" alt="Youtube"></a>
+              <a href="#"><img src="4.png" alt="Instagram"></a>
+              <a href="#"><img src="3.png" alt="TikTok"></a>
+          </div>
+      </div>
+  </div>
+
+  <div class="footer-bottom">
+      <p>© 2025 LuzBnB. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
+  </div>
+</footer>
+
